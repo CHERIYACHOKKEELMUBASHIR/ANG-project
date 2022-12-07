@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<p>{{datenew|date:"short"}}</p>
+
+<table class="table table-dark" style="margin-top: 20px;">
+    <thead>
+        <tr>
+        <th scope="col">Amount</th>
+        <th scope="col">Type</th>
+        <th scope="col">Status</th>
+        </tr>
+    </thead>
+   
+    <tbody>
+        <tr *ngFor="let data of transaction">
+        <td>{{data.amount}}</td>
+        <td>{{data.type}}</td>
+        <td>{{data.status}}</td>
+       
+    
+    </tr>
+    <tr>
+        <th colspan="3" class="text-center ">
+           balance is: {{balance}}
+        </th>
+    </tr>
+
+    
+    </tbody>
+    
+    </table>
+    

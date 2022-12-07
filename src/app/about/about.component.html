@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+
+<div class="row">
+<div class="col-4"></div>
+<div class="col-4 " style="margin-top: 10%;">
+  <app-delete [item]="delacno" (onDelete)="deleted($event)" (onCancel)="cancel()"></app-delete>
+<div class="card text-center">
+    <div class="card-header">
+
+    </div>
+    <div class="card-body">
+      <h5 class="card-title" style="color: white;">Account holder:{{name}}</h5>
+      <p class="card-text" style="color: white;">Account Number :{{acno}}</p>
+      <a (click)="deleteacc()" class="btn btn-primary" style="color: red;">Delete</a>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>
+</div>
+<div class="col-4"></div>
+</div>

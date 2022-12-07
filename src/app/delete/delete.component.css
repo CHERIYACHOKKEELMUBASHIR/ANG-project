@@ -1,0 +1,10 @@
+.d1{
+    border:5px;
+    border-color: yellowgreen;
+    border-style: double;
+    border-radius: 5px;
+    padding: auto;
+    margin-left: auto;
+    margin-top: auto;
+    text-align: center;
+}

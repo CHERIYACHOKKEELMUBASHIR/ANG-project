@@ -1,0 +1,85 @@
+<!-- <nav class="navbar navbar-light bg-dark " >
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#170; HAFC Bank Pvt.Ltd </b></a>
+    <span class="quote text-light">Giving you freedom...</span>
+  </nav>
+   -->
+
+   <app-navbar></app-navbar>
+  
+  <div class="container col-md-12 mt-0">
+      <div class="d-flex justify-content-center h-100">
+          <div class="card">
+              <div class="card-header">
+                  <h3 class="text-center">creditcard form</h3>
+                  
+              </div>
+              <div class="card-body">
+                  <form (ngSubmit)="onsubmit()">
+            <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" [(ngModel)]="fname" name="fname"  placeholder="Full name" id="reg_name" required>
+                            <!-- <div style="color: red" *ngIf="(this.registerform.get('name')?.errors)&&(this.registerform.get('name')?.touched)">Invalid</div> -->
+                      </div>
+                      
+  
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" [(ngModel)]="accountnumber" name="accountnumber" placeholder="Account number" id="reg_accnum" required>
+                          
+                      </div>
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" [(ngModel)]="address" name="address"   placeholder="Address" id="reg_password" required>
+                      </div>
+                      
+                      <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" [(ngModel)]="panno" name="panno"   placeholder="Pancard no" id="reg_password" required>
+                    </div>
+     
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" [(ngModel)]="phoneno" name="phoneno"   placeholder="Phone no." id="reg_password" required>
+                    </div>
+                      <div class="form-group">
+                          <input type="submit" value="Apply"  class="btn float-right login_btn " style="width:50%" >
+                      </div>
+                  </form>
+              </div>
+              <!-- <p style="color:white;align-items:baseline;">already a user? <a href="">Login</a></p> -->
+          </div>
+      </div>
+  </div>
+  
+  <table class="table table-dark" style="margin-top: 100px;">
+<thead>
+    <tr>
+    <th scope="col">Fname</th>
+    <th scope="col">Pancard</th>
+    <th scope="col">phoneno</th>
+    <th scope="col">accountnumber</th>
+    </tr>
+</thead>
+<tbody>
+<tr *ngFor="let data of dummyarray">
+    <td>{{data.fname}}</td>
+    <td>{{data.panno}}</td>
+    <td>{{data.phoneno}}</td>
+    <td>{{data.accountno}}</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
